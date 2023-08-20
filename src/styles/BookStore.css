@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #64676c;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar-left input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.navbar-center input {
+  width: 30%;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-center {
+  width: max-content;
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-right .register-button {
+  background-color: white;
+  color: red;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Book list styles */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.book-item {
+  width: calc(20% - 50px); /* Adjust width for 5 books in a line */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-image {
+  width: 100%;
+}
+
+.book-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-details {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-family: "Times New Roman", serif;
+  font-weight: 300;
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
+.book-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.discounted-price {
+  color: #64676c;
+}
